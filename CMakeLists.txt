@@ -8,7 +8,8 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall")
 
 set(SOURCES C/main.cpp A/preparing.py)
 
-include_directories("A/" "B/" "C/")
+
+include_directories(${PROJECT_SOURCE_DIR})
 add_executable(PR3 ${SOURCES})
 
 add_subdirectory(B)
